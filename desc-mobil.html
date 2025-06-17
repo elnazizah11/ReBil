@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Mobil - ReBil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="assets\logo\Logo_Rebil_black.png" class="logo">
+            </a>
+        </div>
+        <div class="header-middle">
+            <nav>
+                <ul id="header-middle-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#why-us">Why Us</a></li>
+                    <li><a href="sewa-mobil.html">Sewa Mobil</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul id="header-right-login">
+                    <li><a href="login.html" class="btn-login">Masuk</a></li>
+                    <li><a href="signup.html" class="btn-signup">Daftar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="car-desc">
+        <div class="car-desc-left">
+            <!-- Main Image -->
+            <div class="car-desc-left-main">
+                <img id="mainImage" src="assets/car/car_bmw.png" alt="Main Image">
+            </div>
+            <!-- Thumbnail Slider -->
+            <div class="car-desc-left-slide">
+                <div class="car-slide-item">
+                    <img src="assets/car/car_bmw.png" onclick="changeMainImage(this)">
+                </div>
+                <div class="car-slide-item">
+                    <img src="assets/car/car_bmw_1.jpg" onclick="changeMainImage(this)">
+                </div>
+                <div class="car-slide-item">
+                    <img src="assets/car/car_bmw_2.jpg" onclick="changeMainImage(this)">
+                </div>
+                <div class="car-slide-item">
+                    <img src="assets/car/car_bmw_3.jpg" onclick="changeMainImage(this)">
+                </div>
+                <div class="car-slide-item">
+                    <img src="assets/car/car_bmw_4.jpg" onclick="changeMainImage(this)">
+                </div>
+            </div>
+        </div>
+        <div class="car-desc-right">
+            <div class="car-desc-right-title">
+                <h1>BMW M4 Competition</h1>
+            </div>
+            <div class="car-desc-right-star">
+                <span class="stars">
+                    &#9733; &#9733; &#9733; &#9733; &#9734;
+                </span>
+                <p>30+ Reviewer</p>
+            </div>
+            <div class="car-desc-right-sub">
+                <p>
+                    M4 merupakan jenis mobil coupe. 
+                    M4 Competition sebagai versi terbaru dibekali dengan mesin Petrol 2979 cc 
+                    yang mampu menghasilkan tenaga hingga 431 hp dan torsi puncak 550 Nm. 
+                    Konfigurasi mesin BMW M TwinPower Turbo inline 6-cylinder petrol engine.
+                </p>
+            </div>
+            <div class="car-desc-right-type">
+                <div class="type-row">
+                    <span class="label">Type Car</span>
+                    <span class="value">Sport</span>
+
+                    <span class="label">Capacity</span>
+                    <span class="value">2 Seat</span>
+                </div>
+                <div class="type-row">
+                    <span class="label">Steering</span>
+                    <span class="value">Manual</span>
+
+                    <span class="label">Gasoline</span>
+                    <span class="value">70L</span>
+                </div>
+            </div>
+            <div class="car-desc-right-price">
+                <div class="price-left">
+                    <span class="price">Rp 4.000.000</span><span class="per">/ hari</span>
+                </div>
+                <div class="price-right">
+                    <button class="sewa-button">Sewa</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="car-reviews-section">
+        <div class="car-reviews-title">
+            <h2>Reviews</h2>
+        </div>
+        <div class="car-reviews">
+            <!-- Review Cards -->
+            <div class="review-card">
+                <div class="quote-mark"><i class="bi bi-quote"></i></div>
+                <p class="review-text">
+                    BMW M4 Competition adalah kombinasi sempurna antara kekuatan dan keindahan. Mesinnya begitu powerful, memberikan sensasi berkendara yang intens dan memuaskan setiap kali menginjak gas.
+                </p>
+                <div class="review-user">
+                    <img src="assets/icon/person-fill.svg" alt="Timoty P">
+                    <div>
+                        <p class="user-name">Timoty P</p>
+                        <p class="user-time">2 Jam yang lalu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="quote-mark"><i class="bi bi-quote"></i></div>
+                <p class="review-text">
+                    Menyewa BMW M4 Competition adalah keputusan terbaik! Pengalaman mengemudi yang luar biasa dengan akselerasi yang cepat dan kelincahan di jalan membuat liburan saya benar-benar tak terlupakan.
+                </p>
+                <div class="review-user">
+                    <img src="assets/icon/person-fill.svg" alt="Ferdi San">
+                    <div>
+                        <p class="user-name">Ferdi San</p>
+                        <p class="user-time">6 Jam yang lalu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="quote-mark"><i class="bi bi-quote"></i></div>
+                <p class="review-text">
+                    Pengalaman menyewa BMW M4 Competition sangat menyenangkan. Layanan penyewaan mobil yang profesional dan ramah membuat prosesnya begitu mudah dan tanpa hambatan.
+                </p>
+                <div class="review-user">
+                    <img src="assets/icon/person-fill.svg" alt="Miya Karisa">
+                    <div>
+                        <p class="user-name">Miya Karisa</p>
+                        <p class="user-time">3 Hari yang lalu</p>
+                    </div>
+                </div>
+            </div>
+            <div class="review-card">
+                <div class="quote-mark"><i class="bi bi-quote"></i></div>
+                <p class="review-text">
+                    Saya sangat terkesan dengan kenyamanan dan gaya mobil ini. Desainnya yang elegan dilengkapi dengan fitur-fitur canggih membuat perjalanan saya selalu terasa mewah.
+                </p>
+                <div class="review-user">
+                    <img src="assets/icon/person-fill.svg" alt="Elen D">
+                    <div>
+                        <p class="user-name">Elen D</p>
+                        <p class="user-time">9 Jam yang lalu</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-company">
+                <img src="assets\logo\Logo_Rebil_yellow.png" class="footer-logo">
+                <p>Customer Service</p>
+                <p>24/7 Support by WhatsApp, Phone or Email</p>
+            </div>
+            <div class="footer-features">
+                <a href="login.html">Masuk</a>
+                <a href="signup.html">Daftar</a>
+                <a href="">Ganti Email</a>
+                <a href="">Ganti Password</a>
+                <a href="">Pemesanan Mobil</a>
+                <a href="">Report Via Admin</a>
+            </div>
+            <div class="footer-developer">
+                <a href="https://instagram.com/ayakjugaisyah/" target="_blank">@ayakjugaaisyah</a>
+                <a href="https://instagram.com/alin_syariff/" target="_blank">@alin_syarif</a>
+                <a href="https://instagram.com/zainnayaputri_/" target="_blank">@zainnayaputri_</a>
+                <a href="https://instagram.com/elnzzah/" target="_blank">@elnzzah</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2025 Kelompok ReBil. All Right Reserved</p>
+        </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <button id="scrollToTopBtn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- FILE JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

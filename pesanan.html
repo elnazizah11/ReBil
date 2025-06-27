@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sewa Mobil - ReBil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- pesanan -->
+    <div class="pesanan-bg">
+        <div class="pesanan-header">
+            <div class="pesanan-back">
+                <button onclick="window.history.back()" class="back-button">
+                <i class="bi bi-arrow-left"></i>
+                </button>
+            </div>
+            <div class="pesanan-status">
+                <div class="step step-active" id="step1">
+                    <p id="check-mark">1. Info Pesanan</p>
+                    <i class="bi bi-check-circle-fill hidden" id="step-check"></i>
+                </div>
+                <div class="step-line"></div>
+                <div class="step step-inactive" id="step2">
+                    <p>2. Pembayaran</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pesanan-content">
+        <!-- STEP 1 -->
+        <div class="pesanan-info " id="pesananInfo">
+            <div class="pesanan-title">
+                <h1>Info Pesanan</h1>
+                <p>Masukkan daftar diri anda</p>
+            </div>
+            <form class="form-pesanan">
+                <div class="input-group">
+                    <label>Nama</label>
+                    <input type="text" placeholder="Nama">
+                </div>
+                <div class="input-group">
+                    <label>No Hp</label>
+                    <input type="text" placeholder="No HP">
+                </div>
+                <div class="input-group">
+                    <label>Alamat</label>
+                    <input type="text" placeholder="Alamat">
+                </div>
+                <div class="input-group">
+                    <label>Kota/Kabupaten</label>
+                    <input type="text" placeholder="Kota/Kabupaten">
+                </div>
+            </form>
+        </div>
+
+        <!-- STEP 2 -->
+        <div class="pembayaran-content hidden" id="pembayaranContent">
+            <div class="pesanan-info">
+                <div class="pesanan-title">
+                    <h1>Pembayaran</h1>
+                    <p>Silakan Membayar Dengan Pembayaran Yang Sudah Kami Berikan.</p>
+                </div>
+                <div class="payment-options">
+                    <img src="assets/icon/gopay.png" alt="Gopay" class="payment-option" />
+                    <img src="assets/icon/ovo.png" alt="OVO" class="payment-option" />
+                    <img src="assets/icon/shopeepay.png" alt="ShopeePay" class="payment-option" />
+                </div>
+            </div>
+        </div>
+
+        <div class="pesanan-detail">
+            <div class="pesanan-title">
+                <h1>Ringkasan Sewa</h1>
+                <p>Harga dapat berubah tergantung lama sewa dan harga mobil sewaan Anda</p>
+            </div>
+            <div class="pesanan-mobil">
+                <div class="mobil-box">
+                    <img src="assets/car/car_bmw.png" class="mobil-pesan">
+                </div>
+                <h1>BMW M4 Competition</h1>
+            </div>
+            <div class="pesanan-price">
+                <div class="pesanan-sub">
+                    <p>Subtotal</p>
+                    <h1>Rp 4.000.000</h1>
+                </div>
+                <div class="pesanan-sub">
+                    <p>Biaya PPN</p>
+                    <h1>10%</h1>
+                </div>
+                <div class="pesanan-sub">
+                    <div class="pesanan-tot">
+                        <h1>Total Harga Rental</h1>
+                        <p>Semua Pembayaran Sudah Include Dengan Biaya PPN</p>
+                    </div>
+                    <h1>Rp 4.000.000</h1>
+                </div>
+            </div>
+            <div class="pesanan-btn">
+                <button id="lanjutBtn" disabled>Lanjutkan Pembayaran</button>
+                <button id="bayarBtn" class="hidden" disabled>Bayar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-company">
+                <img src="assets\logo\Logo_Rebil_yellow.png" class="footer-logo">
+                <p>Customer Service</p>
+                <p>24/7 Support by WhatsApp, Phone or Email</p>
+            </div>
+            <div class="footer-features">
+                <a href="login.html">Masuk</a>
+                <a href="signup.html">Daftar</a>
+                <a href="">Ganti Email</a>
+                <a href="">Ganti Password</a>
+                <a href="">Pemesanan Mobil</a>
+                <a href="">Report Via Admin</a>
+            </div>
+            <div class="footer-developer">
+                <a href="https://instagram.com/ayakjugaisyah/" target="_blank">@ayakjugaaisyah</a>
+                <a href="https://instagram.com/alin_syariff/" target="_blank">@alin_syarif</a>
+                <a href="https://instagram.com/zainnayaputri_/" target="_blank">@zainnayaputri_</a>
+                <a href="https://instagram.com/elnzzah/" target="_blank">@elnzzah</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2025 Kelompok ReBil. All Right Reserved</p>
+        </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <button id="scrollToTopBtn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- FILE JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

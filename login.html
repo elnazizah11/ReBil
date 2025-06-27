@@ -43,12 +43,6 @@
                     <div class="profile-photo">
                         <img src="assets/icon/person-fill.svg" alt="Photo">
                     </div>
-
-                    <div class="social-icons">
-                        <button type="button" class="google"><i class="bi bi-google"></i></button>
-                        <button type="button" class="facebook"><i class="bi bi-facebook"></i></button>
-                        <button type="button" class="x"><i class="bi bi-twitter"></i></button>
-                    </div>
                 </div>
 
                 <!-- Form Isian -->
@@ -66,12 +60,15 @@
 
                 <!-- Tombol Masuk -->
                 <div class="login-button">
-                    <button type="submit">Masuk</button>
+                    <button type="button" onclick="localStorage.setItem('isLoggedIn', 'true'); window.location.href = '../index.html';">
+                        Masuk
+                    </button>
                 </div>
 
                 <!-- Footer -->
                 <div class="login-footer">
-                    <a href="signup.html">Belum Punya Akun ?</a>
+                    <p>Belum Punya Akun ?</p>
+                    <a href="signup.html">Daftar disini</a>
                 </div>
             </form>
         </div>

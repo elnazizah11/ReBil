@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - ReBil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <div class="header">
+        <div class="header-left">
+            <a href="index.html">
+                <img src="assets\logo\Logo_Rebil_black.png" class="logo">
+            </a>
+        </div>
+        <div class="header-middle">
+            <nav>
+                <ul id="header-middle-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#why-us">Why Us</a></li>
+                    <li><a href="sewa-mobil.html">Sewa Mobil</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="header-right">
+            <nav>
+                <ul id="header-right-login">
+                    <li><a href="login.html" class="btn-login">Masuk</a></li>
+                    <li><a href="signup.html" class="btn-signup">Daftar</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+
+    <div class="profile-content">
+        <div class="nav-profile">
+            <div class="nav-box">
+                <i class="bi bi-person-fill"></i><p>Navigasi Profile</p>
+                <i class="bi bi-clipboard-check"></i><p>Riwayat Transaksi</p>
+                <i class="bi bi-box-arrow-left"></i><p>Logout</p>
+            </div>
+
+            <div class="nav-back-btn">
+                <button onclick="localStorage.setItem('isLoggedIn', 'false'); window.location.href = '../index.html';">
+                    Logout
+                </button>
+            </div>
+        </div>
+
+        <div class="nav-detail">
+            <div class="profile-prib">
+                <div class="profile-prib-title">
+                    <h1>Selamat Datang, Lele Terbang</h1>
+                    <p>Informasi mengenai profil anda ada disini</p>
+                </div>
+                <form class="form-profile">
+                    <div class="input-group">
+                        <label>Nama Lengkap</label>
+                        <input type="text" placeholder="Lele Terbang">
+                    </div>
+                    <div class="input-group">
+                        <label>Tanggal Lahir</label>
+                        <input type="date" placeholder="11/01/2004">
+                    </div>
+                    <div class="input-group">
+                        <label>Nomor Handphone</label>
+                        <input type="number" placeholder="+6282335207434">
+                    </div>
+                </form>
+            </div>
+
+            <div class="riwayat-transaksi">
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-company">
+                <img src="assets\logo\Logo_Rebil_yellow.png" class="footer-logo">
+                <p>Customer Service</p>
+                <p>24/7 Support by WhatsApp, Phone or Email</p>
+            </div>
+            <div class="footer-features">
+                <a href="login.html">Masuk</a>
+                <a href="signup.html">Daftar</a>
+                <a href="">Ganti Email</a>
+                <a href="">Ganti Password</a>
+                <a href="">Pemesanan Mobil</a>
+                <a href="">Report Via Admin</a>
+            </div>
+            <div class="footer-developer">
+                <a href="https://instagram.com/ayakjugaisyah/" target="_blank">@ayakjugaaisyah</a>
+                <a href="https://instagram.com/alin_syariff/" target="_blank">@alin_syarif</a>
+                <a href="https://instagram.com/zainnayaputri_/" target="_blank">@zainnayaputri_</a>
+                <a href="https://instagram.com/elnzzah/" target="_blank">@elnzzah</a>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2025 Kelompok ReBil. All Right Reserved</p>
+        </div>
+    </div>
+
+    <!-- Scroll to top -->
+    <button id="scrollToTopBtn">
+        <i class="bi bi-arrow-up"></i>
+    </button>
+
+    <!-- FILE JS -->
+    <script src="js/script.js"></script>
+</body>
+</html>

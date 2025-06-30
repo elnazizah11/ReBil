@@ -641,7 +641,6 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    gap: 1rem;
 }
 
 .sewa-list-button a {
@@ -655,20 +654,6 @@ body {
 }
 
 .sewa-list-button a:hover {
-    background-color: #ffe600;
-}
-
-/* Bintang Icon */
-.sewa-list-button i {
-    font-size: 2rem;
-    cursor: pointer;
-    border: 2px solid #000;
-    border-radius: 6px;
-    padding: 0rem 1rem;
-    transition: all 0.2s ease;
-}
-
-.sewa-list-button i:hover {
     background-color: #ffe600;
 }
 
@@ -770,7 +755,6 @@ body {
     height: 60px;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 /* Foto Profil */
@@ -1347,6 +1331,7 @@ input::placeholder {
 .back-button:hover {
   transform: translateY(-2px);
   box-shadow: 2px 2px 0 #000;
+  color: #000;
 }
 
 .pesanan-status {

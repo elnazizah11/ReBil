@@ -755,6 +755,7 @@ body {
     height: 60px;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 /* Foto Profil */
@@ -803,6 +804,7 @@ body {
     font-weight: 600;
     font-size: 30px;
     color: #000000;
+    line-height: 2.5;
 }
 
 .input-group input {
@@ -821,7 +823,7 @@ input::placeholder {
 
 /* Tombol Daftar */
 .signup-button {
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .signup-button button {
@@ -844,7 +846,6 @@ input::placeholder {
 /* Sudah punya akun */
 .signup-footer {
     text-align: center;
-    margin-top: 0.5rem;
     font-weight: 500;
     font-size: 20px;
     display: flex;
@@ -1585,4 +1586,218 @@ input::placeholder {
     color: #FFD600;
     justify-items: center;
     align-items: center;
+}
+
+/* profile */
+/* ====== Container Utama ====== */
+.profile-content {
+    display: flex;
+    padding: 8rem 5rem;
+    gap: 2rem;
+}
+
+/* ====== Navigasi Kiri ====== */
+.nav-profiles {
+    border: 2px solid #ccc;
+    margin-left: 15rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    width: 25%;
+    height: 40vh;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    border-radius: 30px;
+}
+
+.nav-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-box p {
+    font-size: 2rem;
+    align-self: center;
+    line-height: 3.25;
+}
+
+.nav-inner {
+    display: flex;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+    cursor: pointer;
+    padding: 0.7rem 2rem;
+    gap: 1.75rem;
+    text-decoration: none;
+}
+
+.nav-inner img {
+    margin-right: 1rem;
+    width: 50px;
+}
+
+.nav-inner p {
+    font-size: 1.2rem;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.nav-inner:hover {
+    background-color: #f4f4f4;
+}
+
+.nav-inner.active {
+    background-color: #FFD600;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* Tambahan untuk p dengan warna spesifik */
+.nav-profile {
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+/* Riwayat Transaksi */
+.nav-transaksi {
+    color: #1c1c1c;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Logout */
+.nav-logout {
+    color: red;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav-logout img {
+    filter: brightness(0) saturate(100%) invert(18%) sepia(94%) saturate(6455%) hue-rotate(354deg) brightness(102%) contrast(118%);
+}
+
+.nav-back-btn {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-btn button{
+    width: 26rem;
+}
+
+.nav-back-btn button {
+    background-color: #fff;
+    border: 2px solid #c4c4c4;
+    padding: 1rem 2rem;
+    border-radius: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #999;
+}
+
+.nav-back-btn button:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* ====== Bagian Kanan ====== */
+.nav-detail {
+    padding: 0 4rem;
+    line-height: 2;
+}
+
+.profile-title h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1c1c1c;
+    margin-bottom: 0.5rem;
+    line-height: 1.5;
+}
+
+.profile-title p {
+    color: #999;
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+}
+
+.form-profile {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 70vh;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #1c1c1c;
+}
+
+.input-group input {
+    padding: 0.75rem 1rem;
+    border: 1.5px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    font-size: 1rem;
+    color: #555;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #FFD600;
+    background-color: #fff;
+}
+
+/* ====== Riwayat Transaksi ====== */
+.riwayat-transaksi {
+    margin-top: 2rem;
+}
+
+.riwayat-transaksi h1 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.riwayat-transaksi p {
+    color: #555;
+    font-size: 1rem;
+}
+
+.box-riwayat {
+    margin-top: 1rem;
+    padding: 1rem;
+    border: 1.5px solid #ddd;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    max-width: 600px;
+}
+
+.riwayat-car h2 {
+    font-size: 1.2rem;
+    color: #1c1c1c;
+}
+
+.riwayat-tgl {
+    margin-top: 0.5rem;
+    color: #333;
+}
+
+.riwayat-tgl-sewa,
+.riwayat-tgl-kembali {
+    display: flex;
+    gap: 2rem; /* seperti tab */
+}
+
+.riwayat-label {
+    color: #000;
+    width: 150px;
 }

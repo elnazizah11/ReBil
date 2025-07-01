@@ -36,24 +36,42 @@
     </div>
 
     <div class="profile-content">
-        <div class="nav-profile">
+        <div class="nav-profiles">
             <div class="nav-box">
-                <i class="bi bi-person-fill"></i><p>Navigasi Profile</p>
-                <i class="bi bi-clipboard-check"></i><p>Riwayat Transaksi</p>
-                <i class="bi bi-box-arrow-left"></i><p>Logout</p>
+                <p>Navigasi Profile</p>
+                <div class="nav-profile">
+                    <div class="nav-inner active">
+                        <img src="assets/icon/person-fill.svg">
+                        <p>Informasi Pribadi Saya</p>
+                    </div>
+                </div>
+                <div class="nav-transaksi">
+                    <div class="nav-inner">
+                        <img src="assets/icon/clipboard-check.svg">
+                        <p>Riwayat Transaksi</p>
+                    </div>
+                </div>
+                <div class="nav-logout">
+                    <div class="nav-inner" onclick="localStorage.setItem('isLoggedIn', 'false'); window.location.href = '../index.html';">
+                        <img src="assets/icon/box-arrow-left.svg">
+                        <p>Logout</p>
+                    </div>
+                </div>
             </div>
 
             <div class="nav-back-btn">
-                <button onclick="localStorage.setItem('isLoggedIn', 'false'); window.location.href = '../index.html';">
-                    Logout
-                </button>
+                <div class="nav-btn">
+                    <button onclick="localStorage.setItem('isLoggedIn', 'true'); window.location.href = '../index.html';">
+                        Kembali ke Dashboard
+                    </button>
+                </div>
             </div>
         </div>
 
         <div class="nav-detail">
             <div class="profile-prib">
-                <div class="profile-prib-title">
-                    <h1>Selamat Datang, Lele Terbang</h1>
+                <div class="profile-title">
+                    <h1>Selamat Datang, Lele Terbang.</h1>
                     <p>Informasi mengenai profil anda ada disini</p>
                 </div>
                 <form class="form-profile">
@@ -67,13 +85,31 @@
                     </div>
                     <div class="input-group">
                         <label>Nomor Handphone</label>
-                        <input type="number" placeholder="+6282335207434">
+                        <input type="number" placeholder="+62-XXX-XXXX-XXX">
                     </div>
                 </form>
             </div>
 
-            <div class="riwayat-transaksi">
-                
+            <div class="riwayat-transaksi" hidden>
+                <div class="profile-title">
+                    <h1>Semua Transaksi Pembelian Kamu Ada Disini !</h1>
+                    <p>Semua transaksi kamu</p>
+                </div>
+                <div class="box-riwayat">
+                    <div class="riwayat-car">
+                        <h2>BMW M4 Competition</h2>
+                    </div>
+                    <div class="riwayat-tgl">
+                        <p class="riwayat-tgl-sewa">
+                            <span class="riwayat-label">Tanggal Sewa:</span>
+                            <span class="riwayat-value">mm/dd/yyyy</span>
+                        </p>
+                        <p class="riwayat-tgl-kembali">
+                            <span class="riwayat-label">Tanggal Kembali:</span>
+                            <span class="riwayat-value">mm/dd/yyyy</span>
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

@@ -148,3 +148,28 @@ document.addEventListener("DOMContentLoaded", function () {
     // ...lanjut ke proses atau konfirmasi
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const infoBtn = document.querySelector('.nav-profile .nav-inner');
+  const transaksiBtn = document.querySelector('.nav-transaksi .nav-inner');
+  const infoSection = document.querySelector('.profile-prib');
+  const transaksiSection = document.querySelector('.riwayat-transaksi');
+
+  // Tambah class "active" ke menu aktif
+  function setActiveMenu(clicked, other) {
+    clicked.classList.add('active');
+    other.classList.remove('active');
+  }
+
+  infoBtn.addEventListener('click', () => {
+    infoSection.hidden = false;
+    transaksiSection.hidden = true;
+    setActiveMenu(infoBtn, transaksiBtn);
+  });
+
+  transaksiBtn.addEventListener('click', () => {
+    infoSection.hidden = true;
+    transaksiSection.hidden = false;
+    setActiveMenu(transaksiBtn, infoBtn);
+  });
+});
